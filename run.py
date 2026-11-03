@@ -256,7 +256,7 @@ def main() -> None:
         retired=retired, bands=confound.by_band(rows), by_track=by_track,
         far=far, where=where, labels=labels, priced=priced,
         seasons=SEASONS, figures=figures,
-        out_path=OUT / "report.html")
+        out_path=OUT / "report.pdf")
 
     say()
     say(f"report  {path}")

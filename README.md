@@ -300,8 +300,8 @@ python run.py
 ```
 
 Six seasons are cached in `data/`, so it runs offline and a second run
-costs nothing. Output goes to `out/`: six PNGs and a self-contained
-`report.html`.
+costs nothing. Output goes to `out/`: six PNGs and a printable
+`report.pdf`.
 
 ```bash
 python -m pytest tests -q
@@ -331,7 +331,8 @@ No test compares against saved output.
 | `src/placebo.py` | the reshuffle and the backwards prediction |
 | `src/confound.py` | retirements, and the cost in points |
 | `src/charts.py` | the six figures |
-| `src/report.py` | the self-contained HTML report |
+| `src/report.py` | the printable PDF report |
+| `src/paper.py` | page composition: A4 pages, tables, figure bands |
 | `run.py` | the pipeline, start to finish |
 
 ---
